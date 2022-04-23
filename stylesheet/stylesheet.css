@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(80, 80, 80);
+    font-family: 'Exo 2', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+/* HEADER */
+
+.complete__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(grey, white);
+}
+
+.header{
+    font-size: 20px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgb(80, 80, 80);
+}
+
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    border: 0px 100px;
+}
+
+.header__options{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__logo{
+    height: 36px;
+    width: 36px;
+    margin: 10px;
+    transform: scale(2,2);
+}
+
+.header__menu1{
+    color: rgb(202, 1, 1);
+    margin: 10px;
+    text-decoration: none;
+}
+.header__menu2{
+    color: rgb(202, 1, 1);
+    margin: 10px;
+    text-decoration: none;
+}
+.header__menu3{
+    color: rgb(202, 1, 1);
+    margin: 10px;
+    text-decoration: none;
+}
+.header__menu4{
+    color: rgb(202, 1, 1);
+    margin: 10px;
+    text-decoration: none;
+}
+.header__menu5{
+    color: rgb(202, 1, 1);
+    margin: 10px;
+    text-decoration: none;
+}
+
+.shopping__cart{
+    margin: 10px;
+    text-decoration: none;
+    height: 40px;
+    transition: height 2s;
+}
+
+.shopping__cart:hover{
+    height: 30px;
+}
+
+/* END HEADER */
+
+/* MAIN INDEX*/
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 40% 35% 15% 10%;
+    grid-template-areas: 
+    "banner banner banner banner"
+    "categorías categorías categorías categorías"
+    "botón botón redes redes"
+    "botón botón redes redes";
+    justify-items: center;
+}
+
+.grilla1{
+    grid-area: banner;
+    justify-self: stretch;
+}
+
+.grilla2{
+    grid-area: categorías;
+    justify-self: stretch;
+}
+
+.grilla3{
+    grid-area: botón;
+}
+
+.grilla4{
+    grid-area: redes;
+}
+
+.banner__principal{
+    background-image: url(../assets/images/bannerprincipal.jpg);
+    /* height: 100vh;
+    width: 100%;
+    background-repeat : no-repeat;
+    background-size : auto;
+    padding-bottom: 100px; */
+}
+
+.banner__index{
+    text-decoration: none;
+    text-align: end;
+}
+
+.banner__text{
+    margin: 10px;
+    color: black;
+}
+
+.banner__subtext{
+    margin: 10px;
+    color: black;
+}
+
+.banner__categories{
+    margin: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.category1{
+    background-image: url(../assets/images/category1.jpg);
+}
+
+.category2{
+    background-image: url(../assets/images/category2.jpg);
+}
+
+.category3{
+    background-image: url(../assets/images/category3.jpg);
+}
+
+.category4{
+    background-image: url(../assets/images/category4.jpg);
+}
+
+.personalization__button{
+    margin: 10px;
+    text-align: center;
+}
+
+.boton__redes{
+    margin: 10px;
+    text-align: center;
+}
+
+.home__banner{
+    width: 100%;
+    height: auto;
+}
+
+/* END MAIN INDEX */
+
+/* MAIN PERSONALIZACIONES */
+
+.detailed__information{
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.características{
+    list-style: none;
+}
+
+/* END MAIN */
+
+/* FOOTER */
+
+footer{
+    background-image: url('../assets/images/carbon_fibre.png');
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 30px;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__menu{
+    color: white;
+    margin: 10px 0px 10px 0px;
+    text-decoration: none;
+}
+
+.newsletter__footer{
+    margin: 10px;
+    color: white;
+    text-align: end;
+}
+
+/* END FOOTER */
+
+@media screen and (min-width: 450px){
+    main{
+        grid-template-areas: 
+        "banner banner banner banner"
+        "categorías categorías categorías categorías"
+        "botón botón botón botón"
+        "redes redes redes redes";
+    }
+}
