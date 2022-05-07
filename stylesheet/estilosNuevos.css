@@ -15,7 +15,7 @@
     .complete__header .header__menu .header__options {
       display: flex;
       flex-direction: row; }
-      .complete__header .header__menu .header__options .header__menu1 {
+      .complete__header .header__menu .header__options .header__menu1, .complete__header .header__menu .header__options .banner__categories {
         color: #ca0101;
         margin: 10px;
         text-decoration: none; }
@@ -40,3 +40,19 @@
     text-decoration: none;
     height: 40px;
     transition: height 2s; }
+
+.Instagram {
+  background-color: #55acee; }
+
+.facebook {
+  background-color: #3a5795; }
+
+.Twitter {
+  background-color: #C25E30; }
+
+.newsletter__footer {
+  height: 50px;
+  width: 500px; }
+
+.banner__categories {
+  background-color: #55acee; }
