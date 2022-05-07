@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/* estilos del header */
+.complete__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(grey, white); }
+  .complete__header .header__menu {
+    display: flex;
+    flex-direction: row;
+    border: 0px 100px; }
+    .complete__header .header__menu .header__options {
+      display: flex;
+      flex-direction: row; }
+      .complete__header .header__menu .header__options .header__menu1 {
+        color: #ca0101;
+        margin: 10px;
+        text-decoration: none; }
+      .complete__header .header__menu .header__options .header__menu2 {
+        color: #ca0101;
+        margin: 10px;
+        text-decoration: none; }
+      .complete__header .header__menu .header__options .header__menu3 {
+        color: #ca0101;
+        margin: 10px;
+        text-decoration: none; }
+      .complete__header .header__menu .header__options .header__menu4 {
+        color: #ca0101;
+        margin: 10px;
+        text-decoration: none; }
+      .complete__header .header__menu .header__options .header__menu5 {
+        color: #ca0101;
+        margin: 10px;
+        text-decoration: none; }
+  .complete__header .shopping__cart {
+    margin: 10px;
+    text-decoration: none;
+    height: 40px;
+    transition: height 2s; }
